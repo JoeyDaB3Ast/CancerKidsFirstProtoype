@@ -1,0 +1,650 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 22px 5%;
+    background-color: #BA6CC7;
+  }
+  
+  .logos {
+    margin-right: auto;
+  }
+  
+  .logo img{
+    padding-bottom: 5px;
+  }
+
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 15px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #DDAE64;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 4px 15px;
+    background-color: #DDAE64;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: #ffb339;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #8b2eb8;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #DDAE64;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-family: 'Red Hat Display', sans-serif; 
+    color: white; font-weight: medium; 
+    font-size: 25px;
+  }
+  
+  .triangle-1 {
+    background: rgb(221,174,100);
+    background: linear-gradient(0deg, rgba(221,174,100,1) 0%, rgba(186,108,199,1) 100%);    
+    clip-path: polygon(0% 0%,0% 100%,100% 0%);
+    width: 1920px;
+    height: 800px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif; 
+    color: white; font-weight: medium; 
+    padding: 100px;
+    padding-left: 350px;
+    align-items: center;
+    }
+
+    .triangle-2 {
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        width: 1920px;
+        height: 800px;
+        margin-top: -816px;
+    }
+
+    h2 {
+        padding-left: 25px;
+        border-left: 12.5px solid #FFF;
+        display: block;
+        height: 300px;
+    }
+
+    .rectangle-1 {
+        display: none;
+    }
+    
+    .rectangle-2 {
+        display: none;
+    }
+
+    .header-2 {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .svg {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 2.80%;
+      transform: scale(1);
+      width: 1750px;
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      height: 1000px;
+      overflow-y: hidden;
+    }
+
+    .Information {
+      align-items: center;
+    }
+    
+    .custom-shape-divider-top-1636489056 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .custom-shape-divider-bottom-1636489142 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1636489142 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .custom-shape-divider-bottom-1636489142 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    .container{
+      max-width: 1170px;
+      margin:auto;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul{
+      list-style: none;
+    }
+    .footer{
+      background-color: #8b2eb8;
+        padding: 70px 0;
+    }
+    .footer-col{
+      width: 25%;
+      padding: 0 15px;
+    }
+    .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+    }
+    .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 45px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+      overflow-y: hidden;
+    }
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+    }
+
+    .header-2 h1 {
+      font-size: 90px; 
+      color:black; 
+      text-shadow: 1px 1px white, -1px 0px #444;
+    }
+  
+    .description h2{
+      display: none;
+    }
+
+    .phone_svg {
+      display: none;
+    }
+
+    .backToTop{
+      position: fixed;
+      bottom: 400px;
+      right: 40px;
+      height: 60px;
+      width: 60px;
+      background:rgb(214, 214, 214) url(up-arrow.png);
+      border-radius: 5px;
+      background-size: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 100000;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .backToTop.active{
+      bottom: 40px;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .arrow {
+      text-align: center;
+      padding-bottom: -80px;
+      margin-top: 50px;
+    }
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgb(214, 214, 214); 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(0deg, rgba(221,174,100,1) 0%, rgba(186,108,199,1) 100%);    
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+
+
+
+  @media screen and (max-height: 918px) {
+    .custom-shape-divider-top-1636489056 {
+      display: none;
+    }
+
+    .custom-shape-divider-bottom-1636489142 {
+        display: none;
+    }
+  }
+
+  @media screen and (min-height: 994px) {
+    .custom-shape-divider-top-1636489056 {
+      display: none;
+    }
+
+    .custom-shape-divider-bottom-1636489142 {
+        display: none;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 1600px){
+    svg {
+      transform: scale(1);
+      padding-right: 284px;
+    }
+
+    .custom-shape-divider-top-1636489056 {
+      display: none;
+    }
+
+    .custom-shape-divider-bottom-1636489142 {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 1420px) {
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+      font-size: 25px;
+    }
+
+    svg {
+      margin-right: 127px;
+      width: 1454px;
+    }
+   }
+  
+   @media screen and (max-width: 1280px) {
+    h1 {
+        font-family: 'Red Hat Display', sans-serif; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 20px;
+        margin-right: 0px;
+    }
+
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+      font-family:'Red Hat Display', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      color: #edf0f1;
+      text-decoration: none;
+    }
+
+    .triangle-1 {
+      width: 1250px;
+      height: 677px;
+      justify-content: center;
+      font-size: 50px;
+      font-family: 'Red Hat Display', sans-serif; 
+      color: white; font-weight: medium; 
+      padding: 100px;
+      padding-left: 50px;
+      align-items: center;
+      }
+  
+      .triangle-2 {
+          width: 1250px;
+          height: 677px;
+          margin-top: -694px;
+      }
+
+      svg {
+        transform: scale(1);
+        margin-right: 447px;
+        width: 1198px;
+        padding-bottom: 550px;
+      }
+
+      .Information {
+        height: 700px;
+        overflow-y: hidden;
+      }
+
+      .header-2 h1 {
+        font-size: 60px;
+      }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+
+    .triangle-1 {
+        display: none;
+        }
+
+    .triangle-2 {
+        display: none;
+    }
+
+    .rectangle-1 {
+        background: rgb(221,174,100);
+        background: linear-gradient(0deg, rgba(221,174,100,1) 0%, rgba(186,108,199,1) 100%);    
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        font-size: 50px;
+        font-family: 'Red Hat Display', sans-serif; 
+        color: white; font-weight: medium; 
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .rectangle-2 {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        margin-top: 0%;
+    }
+
+    .custom-shape-divider-top-1636489056 {
+      display: none;
+    }
+
+    .custom-shape-divider-bottom-1636489142 {
+        display: none;
+    }
+
+    svg {
+      transform: scale(0.9);
+      padding-right: 274px;
+      height: 1059px;
+      padding-bottom: 500px;
+    }
+
+    .header-2 h1 {
+      font-size: 60px; 
+      color:black; 
+      text-shadow: 1px 1px white, -1px 0px #444;
+    }
+
+    .Information {
+      height: 800px;
+      overflow-y: hidden;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    svg {
+      transform: scale(0.9);
+      padding-right: 425px;
+      padding-bottom: 450px;
+    }
+
+    .Information {
+      height: 700px;
+      overflow-y: hidden;
+    }
+  }
+
+  @media screen and (max-width: 810px) {
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+
+    .header-2 h1 {
+      font-size: 45px; 
+      color:black; 
+      text-shadow: 1px 1px white, -1px 0px #444;
+    }
+
+    svg {
+      transform: scale(0.9);
+      padding-right: 557px;
+      height: 962px;
+      padding-bottom: 600px;
+    }
+
+    .Information {
+      height: 600px;
+      overflow-y: hidden;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    svg {
+      transform: scale(1);
+      padding-right: 728px;
+      height: 883px;
+    }
+  }
+
+  @media screen and (max-width: 574px) {
+    .footer-col{
+      width: 100%;
+    }
+
+    svg {
+      transform: scale(1.1);
+      height: 1115px;
+      padding-top: 75px;
+    }
+
+    .arrow {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 516px) {
+    .overlay a {
+      font-size: 25px;
+    }
+    .overlay .close {
+      font-size: 50px;
+      top: 15px;
+      right: 35px;
+    }
+    .text {
+        display: none;
+    }
+    
+    .rectangle-1 {
+      background: rgb(221,174,100);
+      background: linear-gradient(0deg, rgba(221,174,100,1) 0%, rgba(186,108,199,1) 100%);    
+      display: flex;
+      width: 100%;
+      height: 90vh;
+      justify-content: center;
+      font-size: 35px;
+      font-family: 'Red Hat Display', sans-serif; 
+      color: white; font-weight: medium; 
+      padding-left: 0px;
+      align-items: center;
+    }
+
+    h2 {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-top: 0%;
+        border-left: 0px solid #FFF;
+    }
+
+    .svg {
+      display: none;
+    }
+
+    .Information {
+      height: 800px;
+      overflow-y: hidden;
+    }
+
+    .phone_svg {
+      display: block;
+      overflow-y: hidden;
+      padding-right: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 465 ) {
+  .header-2 h1 {
+    font-size: 35px; 
+  }
+}
+
+
+ 
+  
