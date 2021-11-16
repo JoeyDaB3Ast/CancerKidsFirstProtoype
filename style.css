@@ -616,6 +616,7 @@
         height: fit-content;
         margin-top: 0%;
         border-left: 0px solid #FFF;
+        font-weight: 300;
     }
 
     .svg {
