@@ -348,9 +348,6 @@
       }
     }
 
-
-
-
   @media screen and (max-height: 918px) {
     .custom-shape-divider-top-1636489056 {
       display: none;
@@ -371,7 +368,27 @@
     }
   }
 
+  @media only screen and (min-width: 1930px){
+    .triangle-1 {
+      width: 2500px;
+      height: 1000px;
 
+      }
+  
+      .triangle-2 {
+          width: 2500px;
+          height: 1000px;
+          margin-top: -1016px;
+      }
+
+      h2 {
+        padding-left: 25px;
+        border-left: 12.5px solid #FFF;
+        display: block;
+        height: 400px;
+        font-size: 100px;
+      }
+    }
 
 
   @media only screen and (max-width: 1600px){
@@ -521,6 +538,8 @@
     }
   }
 
+
+
   @media screen and (max-width: 950px) {
     svg {
       transform: scale(0.9);
@@ -611,12 +630,11 @@
     }
 
     h2 {
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        margin-top: 0%;
-        border-left: 0px solid #FFF;
-        font-weight: 300;
+      padding-left: 25px;
+      border-left: 10px solid #FFF;
+
+      height: 200px;
+      font-size: 3rem;
     }
 
     .svg {
