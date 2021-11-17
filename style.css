@@ -314,6 +314,10 @@
       padding-bottom: -80px;
       margin-top: 50px;
     }
+
+    .arrow:hover {
+      color: #ffb339; 
+    }
     .bounce {
       -moz-animation: bounce 2s infinite;
       -webkit-animation: bounce 2s infinite;
@@ -375,7 +379,10 @@
       animation: animate 1s linear;
     }
 
-    
+    .rectangle-btn a {
+      display: none;
+    }
+
 
     @keyframes animate {
       0%
@@ -692,7 +699,7 @@
     h2 {
       padding-left: 25px;
       border-left: 10px solid #FFF;
-
+      width: 400px;
       height: 200px;
       font-size: 3rem;
     }
