@@ -360,6 +360,12 @@
       overflow: hidden;
     }
 
+    .triangle-1 a:hover {
+      background-color: #fff;
+      color: #ffb339;
+      overflow: hidden;
+    }
+
     .triangle-1 span {
       position: absolute;
       background-color: #FFF;
