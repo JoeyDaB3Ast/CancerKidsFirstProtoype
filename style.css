@@ -315,9 +315,6 @@
       margin-top: 50px;
     }
 
-    .arrow:hover {
-      color: #ffb339; 
-    }
     .bounce {
       -moz-animation: bounce 2s infinite;
       -webkit-animation: bounce 2s infinite;
