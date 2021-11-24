@@ -472,8 +472,66 @@ h1 {
       transition: all 0.3s ease-out;
       color: #fff;
    }
-  
 
+   .contact-info {
+    display: flex;
+    height: 21vh;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1%;
+   }
+   
+   .contact-header {
+     width: 90%;
+     background-color: #ffb339;
+     height: 17vh;
+     border-radius: 25px;
+   }
+
+   .contact-header h1 {
+     padding-top: 1%;
+     font-size: 11vmin;
+     justify-content: center;
+     display: flex;
+   }
+
+   .column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 300px; 
+    border-radius: 25px;
+  }
+
+  .row-1 {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .purple {
+    background-color: #AE7EC5;
+  }
+
+
+  .row-1 h2{
+      padding-left: 0px;
+      border-left: 0px;
+      display: block;
+      height: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .row-1 {
+      display: none;
+    }
+
+  }
 
   @keyframes animate {
     0%
@@ -694,6 +752,7 @@ h1 {
     height: 800px;
     overflow-y: hidden;
   }
+
 }
 
 
@@ -813,10 +872,19 @@ h1 {
 
 
 
-@media screen and (max-width: 465 ) {
-.header-2 h1 {
-  font-size: 35px; 
-}
+@media screen and (max-width: 465px) {
+  .header-2 h1 {
+    font-size: 35px; 
+  }
+
+  .contact-header h1{
+    padding-top: 6%;
+  }
+
+  .contact-header {
+    height: 13vh;
+    border-radius: 25px;
+  }
 }
 
 
