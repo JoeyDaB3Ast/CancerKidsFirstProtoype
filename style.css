@@ -373,11 +373,12 @@ h1 {
 
   .contact-background{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(contactbackground.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
   }
 
@@ -460,10 +461,9 @@ h1 {
     }
   
     .card1:hover:before {
-      transform: scale(21);
+      transform: scale(25);
     }
 
-  
     .card1:hover p {
       transition: all 0.3s ease-out;
       color: rgba(255, 255, 255, 0.8);
@@ -519,12 +519,21 @@ h1 {
   }
 
 
-  .row-1 h2{
+  .row-1 h2
+  {
       padding-left: 0px;
       border-left: 0px;
       display: block;
       height: 50px;
   }
+
+  #mc_embed_signup {
+    background: #AE7EC5; clear:left; font:14px Helvetica,Arial,sans-serif; 
+  }
+
+  #mc-embedded-subscribe .button {
+    background-color: #ffb339;
+}
 
   @media screen and (max-width: 600px) {
     .row-1 {
