@@ -561,13 +561,16 @@ h1 {
     background-color: #8b2eb8;
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   .column-1:hover {
     background-color: #a64fd1;
     transition: 0.5s;
     cursor: pointer;
+  }
+
+  .column-1 img {
+      width: 100%;
   }
 
   .column-2 {
@@ -577,7 +580,8 @@ h1 {
   }
 
   .column-2 img {
-    width: 100%;
+    margin-top: 10%;
+    width: 50%;
   }
 
   .column-2:hover {
@@ -590,6 +594,12 @@ h1 {
     background-color: #9a63b6;
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .column-3 img {
+    margin-top: 10%;
+    width: 80%;
   }
 
   .column-3:hover {
@@ -803,7 +813,7 @@ h1 {
       font-size: 60px;
     }
 
-    .column-1 img{
+    .column-3 img{
       width: 20vw;
     }
 }
@@ -953,10 +963,13 @@ h1 {
     width: 100%;
   }
 
-  .column-1 img{
+  .column-3 img{
     width: 80vw;
   }
 
+  .column-2 img {
+    width: 60%;
+  }
 
 }
 
@@ -1035,6 +1048,10 @@ h1 {
   .contact-header {
     height: 13vh;
     border-radius: 25px;
+  }
+
+  .column-1, .column-2, .column-3 {
+    height: 420px; 
   }
 }
 
