@@ -56,11 +56,12 @@ header {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: 1s;
 }
 
 .cta:hover {
-  background-color: #ffb339;
+  background-color: #fff;
+  color:#ffb339;;
 }
 
 .menu {
@@ -356,6 +357,7 @@ h1 {
     background-color: #fff;
     color: #ffb339;
     overflow: hidden;
+    transition: 1s;
   }
 
   .triangle-1 span {
@@ -533,13 +535,80 @@ h1 {
 
   #mc-embedded-subscribe .button {
     background-color: #ffb339;
-}
+  }
 
-  @media screen and (max-width: 600px) {
-    .row-1 {
-      display: none;
-    }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  }
 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column-1, .column-2, .column-3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 500px; 
+    overflow-y: hidden;
+  }
+
+  .column-1 {
+    background-color: #8b2eb8;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .column-1:hover {
+    background-color: #a64fd1;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .column-2 {
+    background-color: #8e4ead;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .column-2:hover {
+    background-color: #a85fcc;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .column-3 {
+    background-color: #9a63b6;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .column-3:hover {
+    background-color: #b47ecf;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .interactive:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .interactive h1 {
+    font-size: 45px; 
+    color:#fff; 
+  }
+
+  .interactive p {
+    font-size: 20px; 
+    color:#fff; 
   }
 
   @keyframes animate {
@@ -625,6 +694,24 @@ h1 {
   .custom-shape-divider-bottom-1636489142 {
       display: none;
   }
+
+  .triangle-1 {
+    width: 1620px;
+    height: 740px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif; 
+    color: white; font-weight: medium; 
+    padding: 100px;
+    padding-left: 50px;
+    align-items: center;
+    }
+
+    .triangle-2 {
+        width: 1620px;
+        height: 740px;
+        margin-top: -758px;
+    }
 }
 
 @media screen and (max-width: 1420px) {
@@ -638,6 +725,24 @@ h1 {
     margin-right: 127px;
     width: 1454px;
   }
+
+  .triangle-1 {
+    width: 1420px;
+    height: 740px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif; 
+    color: white; font-weight: medium; 
+    padding: 100px;
+    padding-left: 50px;
+    align-items: center;
+    }
+
+    .triangle-2 {
+        width: 1420px;
+        height: 740px;
+        margin-top: -758px;
+    }
  }
 
  @media screen and (max-width: 1280px) {
@@ -648,6 +753,7 @@ h1 {
       font-size: 20px;
       margin-right: 0px;
   }
+  
 
   .nav__links a,
   .cta,
@@ -691,6 +797,10 @@ h1 {
 
     .header-2 h1 {
       font-size: 60px;
+    }
+
+    .column-1 img{
+      width: 20vw;
     }
 }
 
@@ -812,6 +922,21 @@ h1 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .row-1 {
+    display: none;
+  }
+
+  .column-1, .column-2, .column-3 {
+    width: 100%;
+  }
+
+  .column-1 img{
+    width: 80vw;
+  }
+
+}
+
 @media screen and (max-width: 574px) {
   .footer-col{
     width: 100%;
@@ -844,20 +969,17 @@ h1 {
   .rectangle-1 {
     background: rgb(221,174,100);
     background: linear-gradient(0deg, rgba(221,174,100,1) 0%, rgba(186,108,199,1) 100%);    
-    display: flex;
+    padding-top: 25%;
     width: 100%;
     height: 90vh;
-    justify-content: center;
     font-size: 35px;
     font-family: 'Red Hat Display', sans-serif; 
     color: white; font-weight: medium; 
-    padding-left: 0px;
-    align-items: center;
+    padding-left: 12.5%;
   }
 
   h2 {
-    padding-left: 25px;
-    border-left: 10px solid #FFF;
+    padding-left: 10px;
     width: 400px;
     height: 200px;
     font-size: 3rem;
