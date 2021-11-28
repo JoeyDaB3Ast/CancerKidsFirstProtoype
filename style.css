@@ -137,7 +137,7 @@ h1 {
       clip-path: polygon(100% 0, 0% 100%, 100% 100%);
       width: 1920px;
       height: 800px;
-      margin-top: -816px;
+      margin-top: -818px;
   }
 
   h2 {
@@ -312,8 +312,7 @@ h1 {
 
   .arrow {
     text-align: center;
-    padding-bottom: -80px;
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .bounce {
@@ -577,6 +576,10 @@ h1 {
     padding-top: 25px;
   }
 
+  .column-2 img {
+    width: 100%;
+  }
+
   .column-2:hover {
     background-color: #a85fcc;
     transition: 0.5s;
@@ -610,6 +613,7 @@ h1 {
     font-size: 20px; 
     color:#fff; 
   }
+
 
   @keyframes animate {
     0%
@@ -872,6 +876,10 @@ h1 {
     overflow-y: hidden;
   }
 
+  .arrow {
+    display: none;
+  }
+
 }
 
 
@@ -886,6 +894,12 @@ h1 {
   .Information {
     height: 700px;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .Information {
+    padding: 25px;
   }
 }
 
@@ -912,6 +926,10 @@ h1 {
     height: 600px;
     overflow-y: hidden;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 710px) {
@@ -919,6 +937,10 @@ h1 {
     transform: scale(1);
     padding-right: 728px;
     height: 883px;
+  }
+
+  .arrow {
+    display: none;
   }
 }
 
@@ -934,6 +956,7 @@ h1 {
   .column-1 img{
     width: 80vw;
   }
+
 
 }
 
@@ -992,16 +1015,13 @@ h1 {
   .Information {
     height: 800px;
     overflow-y: hidden;
+    padding: 50px;
   }
 
-  .phone_svg {
-    display: block;
-    overflow-y: hidden;
-    padding-right: 200px;
+  .header-2 h1 {
+    font-size: 50px; 
   }
 }
-
-
 
 @media screen and (max-width: 465px) {
   .header-2 h1 {
