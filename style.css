@@ -175,6 +175,10 @@ h1 {
     overflow-y: hidden;
   }
 
+  .phone {
+    display: none;
+  }
+
   .Information {
     align-items: center;
   }
@@ -721,11 +725,15 @@ h1 {
     align-items: center;
     }
 
-    .triangle-2 {
-        width: 1620px;
-        height: 740px;
-        margin-top: -758px;
-    }
+  .triangle-2 {
+    width: 1620px;
+    height: 740px;
+    margin-top: -758px;
+  }
+
+  .arrow {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1420px) {
@@ -886,9 +894,6 @@ h1 {
     overflow-y: hidden;
   }
 
-  .arrow {
-    display: none;
-  }
 
 }
 
@@ -1025,10 +1030,20 @@ h1 {
     display: none;
   }
 
+  .phone {
+    display: block;
+  }
+
+  .phone img {
+    width: 100%;
+    margin-left: 8%;
+    margin-top: 8%;
+  }
+
   .Information {
-    height: 800px;
+    height: 1000px;
     overflow-y: hidden;
-    padding: 50px;
+    padding: 0px 50px;
   }
 
   .header-2 h1 {
@@ -1052,6 +1067,21 @@ h1 {
 
   .column-1, .column-2, .column-3 {
     height: 420px; 
+  }
+
+  .Information {
+    height: 750px;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .Information {
+    height: 500px;
+  }
+
+  .header-2 h1 {
+    font-size: 25px; 
   }
 }
 
