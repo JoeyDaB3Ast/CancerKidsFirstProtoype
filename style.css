@@ -628,7 +628,6 @@ h1 {
     color:#fff; 
   }
 
-
   @keyframes animate {
     0%
     {
@@ -1048,6 +1047,8 @@ h1 {
 
   .header-2 h1 {
     font-size: 50px; 
+    font-weight: 600;
+    text-shadow: none;
   }
 }
 
