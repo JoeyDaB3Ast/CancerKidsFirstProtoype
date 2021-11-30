@@ -384,7 +384,6 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-
   }
 
   .container-2 {
@@ -478,19 +477,10 @@ h1 {
       color: #fff;
    }
 
-   .contact-info {
-    display: flex;
-    height: 21vh;
-    width: 100%;
-    justify-content: center;
-    padding-top: 1%;
-   }
    
-   .contact-header {
-     width: 90%;
-     background-color: #ffb339;
+   .contact-header h1{
      height: 17vh;
-     border-radius: 25px;
+    text-align: center;
    }
 
    .contact-header h1 {
@@ -500,37 +490,7 @@ h1 {
      display: flex;
    }
 
-   .column {
-    float: left;
-    width: 45%;
-    padding: 10px;
-    height: 600px; 
-    border-radius: 25px;
-  }
-
-  .row-1 {
-    justify-content: center;
-    display: flex;
-  }
-  
-  .row-1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .purple {
-    background-color: #AE7EC5;
-  }
-
-
-  .row-1 h2
-  {
-      padding-left: 0px;
-      border-left: 0px;
-      display: block;
-      height: 50px;
-  }
+ 
 
   #mc_embed_signup {
     background: #AE7EC5; clear:left; font:14px Helvetica,Arial,sans-serif; 
@@ -626,6 +586,95 @@ h1 {
   .interactive p {
     font-size: 20px; 
     color:#fff; 
+  }
+
+  .column-4, .column-5, .column-6 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 450px; 
+    overflow-y: hidden;
+  }
+
+  .column-4 {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .column-4:hover {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .column-5 img {
+      width: 100%;
+  }
+
+  .column-5 {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .column-5 h1 {
+    color: black;
+  }
+
+  .column-5 p {
+    color: black;
+  }
+
+  .column-5 img {
+    margin-top: 10%;
+    width: 50%;
+  }
+
+  .column-5:hover {
+    background-color: #9e9e9e;
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
+
+  .column-5:hover h1 {
+    color: #fff;
+  }
+
+  .column-5:hover p {
+    color: #fff;
+  }
+
+
+  .column-6 {
+    background-color: #9a63b6;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .column-6 img {
+    margin-top: 10%;
+    width: 80%;
+  }
+
+  .column-6:hover {
+    background-color: #b47ecf;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .contact-landing {
+    width: 100%;
+    height: 50vh;
+    background-image:  linear-gradient(to bottom, #b96cc723 , rgba(133, 134, 134, 0.609)), url(Skyline.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .contact-landing header {
+    background-color: rgba(255, 255, 255, 0);
   }
 
   @keyframes animate {
