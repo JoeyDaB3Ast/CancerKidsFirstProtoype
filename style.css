@@ -497,13 +497,13 @@ h1 {
   }
 
   .column-1 {
-    background-color: #8b2eb8;
+    background-color: #DA291CFF;
     text-align: center;
     padding-top: 25px;
   }
 
   .column-1:hover {
-    background-color: #a64fd1;
+    background-color: rgb(218, 113, 44);
     transition: 0.5s;
     cursor: pointer;
   }
@@ -513,7 +513,7 @@ h1 {
   }
 
   .column-2 {
-    background-color: #8e4ead;
+    background-color: rgb(108, 155, 194);
     text-align: center;
     padding-top: 25px;
   }
@@ -524,13 +524,13 @@ h1 {
   }
 
   .column-2:hover {
-    background-color: #a85fcc;
+    background-color: rgb(127, 209, 178);
     transition: 0.5s;
     cursor: pointer;
   }
 
   .column-3 {
-    background-color: #9a63b6;
+    background-color: rgb(49, 14, 165);
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -542,7 +542,7 @@ h1 {
   }
 
   .column-3:hover {
-    background-color: #b47ecf;
+    background-color: rgb(111, 78, 218);
     transition: 0.5s;
     cursor: pointer;
   }
