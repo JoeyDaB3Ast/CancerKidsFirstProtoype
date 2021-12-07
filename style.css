@@ -628,7 +628,7 @@ h1 {
   .contact-landing {
     width: 100%;
     height: 50vh;
-    background-image:  linear-gradient(to bottom, #b96cc723 , rgba(133, 134, 134, 0.609)), url(Skyline.jpg);
+    background-image:  linear-gradient(to bottom, #b96cc723 , rgba(204, 204, 204, 0.698)), url(Skyline.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
