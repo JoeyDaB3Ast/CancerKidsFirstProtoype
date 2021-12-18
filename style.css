@@ -138,6 +138,9 @@ h1 {
       width: 1920px;
       height: 800px;
       margin-top: -818px;
+      animation: pulse;
+      animation-duration: 3s;
+
   }
 
   h2 {
