@@ -138,9 +138,8 @@ h1 {
       width: 1920px;
       height: 800px;
       margin-top: -818px;
-      animation: pulse;
-      animation-duration: 3s;
-
+      animation: fadeIn;
+      animation-duration: 1s;
   }
 
   h2 {
@@ -671,11 +670,15 @@ h1 {
   }
 
   .about-information-container {
-    display: flex;
     width: 100%;
     height: 1500px;
     background-color: #ff7f7f;
-    justify-content: center;
+    padding-top: 700px;
+    text-align: center;
+  }
+
+  .about-information-container h1{
+    font-size: 50px;
   }
 
   #left-side {
@@ -774,7 +777,8 @@ h1 {
   }
 
   .about-center {
-    height: 3000px
+    height: 1918px;
+    text-align: center;
   }
 
   .about-landing header {
@@ -807,8 +811,56 @@ h1 {
     display: table;
     clear: both;
   }
+  
+  .principle-title {
+    width: 100%;
+    height: 780px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
 
+  .principles {
+    width: 85%;
+    background-color: #ff7f7f;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 40px;
+  }
 
+  .principles p {
+    color: white;
+  }
+
+  .about-column{
+    padding-top: 50px;
+    width: 33.3%;
+    float: left;
+    column-gap: 40px;
+  }
+
+  .about-column h1 {
+    font-size: 35px;
+  }
+  
+  .principle-title:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .about-quote {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 400px;
+    background-image: url(sunset.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   @keyframes gradient {
     0% {
@@ -1075,6 +1127,34 @@ h1 {
   h2 {
     height: 300px;
   }
+
+  .about-column {
+    width: 100%;
+    height: 710px;
+    padding-top: 50px;
+    float: left;
+  }
+
+  .about-information-container {
+    width: 100%;
+    height: 3200px;
+    background-color: #ff7f7f;
+    padding-top: 700px;
+    text-align: center;
+  }
+
+  .principle-title {
+    height: 2354px;
+  }
+
+  .about-information-item {
+    margin-top: -3400px;
+  }
+
+  .about-center {
+    height: 3618px;
+  }
+  
 }
 
 @media screen and (max-width: 950px) {
@@ -1165,7 +1245,7 @@ h1 {
   }
 
   #content2 {
-    height: 250px;
+    height: 275px;
   }
 
   #content3 {
@@ -1359,6 +1439,17 @@ h1 {
 
   .column-5 {
     height: 170vh;
+  }
+
+  .about-column img {
+    width: 100%;
+  }
+
+  .about-column {
+    width: 100%;
+    height: 602px;
+    padding-top: 50px;
+    float: left;
   }
 
 }
