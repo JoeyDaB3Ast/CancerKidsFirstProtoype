@@ -818,12 +818,13 @@ h1 {
     width: 1620px;
     height: 740px;
     justify-content: center;
-    font-size: 50px;
-    font-family: 'Red Hat Display', sans-serif; 
-    color: white; font-weight: medium; 
     padding: 100px;
-    padding-left: 50px;
+    padding-left: 200px;
     align-items: center;
+    }
+
+    .triangle-2 .header-2 {
+      font-size: 45px;
     }
 
   .triangle-2 {
