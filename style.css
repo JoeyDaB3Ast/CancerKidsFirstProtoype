@@ -1477,7 +1477,21 @@ h1 {
   }
 }
 
+@media screen and (max-width: 370px) {
+
+  .content1 h1, .content2 h1, .content3 h1{
+    font-size: 19px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 300px) {
+
+  .content1 h1, .content2 h1, .content3 h1{
+    font-size: 22px;
+    text-align: center;
+  }
+
   .Information {
     height: 500px;
   }
