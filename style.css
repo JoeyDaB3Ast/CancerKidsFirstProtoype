@@ -454,10 +454,14 @@ h1 {
       color: #fff;
    }
 
+   .contact-header {
+    overflow-y: hidden;
+   }
    
    .contact-header h1{
-     height: 17vh;
+    height: 17vh;
     text-align: center;
+    overflow-y: hidden;
    }
 
    .contact-header h1 {
@@ -466,6 +470,24 @@ h1 {
      justify-content: center;
      display: flex;
    }
+
+   .btn {
+    background-color: #FFB339; 
+    border: none; 
+    width: 200px;
+    color: white; 
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    transition-delay: 0.1s;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+  }
+  
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
 
  
 
@@ -575,55 +597,34 @@ h1 {
 
   .column-4 {
     text-align: center;
-    padding: 0px;
+    padding-top: 25px;
+    background-color: #dd64d7;
+    padding-bottom: 25px;
   }
 
   .column-4:hover {
     transition: 0.5s;
-    cursor: pointer;
-  }
-
-  .column-5 img {
-      width: 100%;
   }
 
   .column-5 {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;  
     text-align: center;
-    padding-top: 25px;
-  }
-
-  .column-5 h1 {
-    color: white;
-  }
-
-  .column-5 p {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px;
   }
 
   .column-5 img {
-    margin-top: 10%;
-    width: 50%;
+    margin-top: 0%;
+    width: 100%;
+    padding: 0px;
   }
 
   .column-6 {
     background-color: #b4b4b4;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .column-6 img {
-    margin-top: 10%;
-    width: 70%;
-  }
-
-  .column-6:hover {
-    background-color: #b47ecf;
-    transition: 0.5s;
-    cursor: pointer;
+    padding: 0px;
   }
 
   .contact-landing {
@@ -855,6 +856,7 @@ h1 {
     align-items:center;
     text-align: center;
     height: 400px;
+    padding: 10px;
     background-image: url(sunset.png);
     background-attachment: fixed;
     background-position: center;
@@ -1065,9 +1067,8 @@ h1 {
     .column-4, .column-5, .column-6 {
       width: 100%;
     }
-  
     .column-5 {
-      height: 145vh;
+      display: none;
     }
 }
 
@@ -1344,6 +1345,14 @@ h1 {
   .text {
       display: none;
   }
+
+  .column-5 {
+    display: block;
+  }
+
+  .column-5 {
+    height: 380px;
+  }
   
   .rectangle-1 {
     background: rgb(221,174,100);
@@ -1435,10 +1444,6 @@ h1 {
 
   .Information {
     height: 750px;
-  }
-
-  .column-5 {
-    height: 170vh;
   }
 
   .about-column img {
