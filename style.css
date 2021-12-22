@@ -1077,7 +1077,7 @@ h1 {
 
   @media screen and (max-width: 1450px) {
     .column12 h2 {
-      height: 450px;
+      height: 390px;
     }
 
     .center {
@@ -1271,7 +1271,7 @@ h1 {
   }
 
   .principle-title {
-    height: 2354px;
+    height: 2243px;
   }
 
   .about-information-item {
@@ -1280,6 +1280,22 @@ h1 {
 
   .about-center {
     height: 3618px;
+  }
+
+  .principle-title {
+    height: 2000px;
+  }
+
+  .about-information-container {
+    height: 2962px;
+  }
+
+  .about-information-item {
+    margin-top: -3130px;
+  }
+
+  .about-center {
+    height: 3408px;
   }
   
 }
@@ -1332,6 +1348,7 @@ h1 {
   .column10 h1 {
     font-size: 50px;
     text-align: center;
+    text-decoration-color: transparent;
   }
 
   .column11 {
@@ -1534,7 +1551,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 516px) {
+@media screen and (max-width: 522px) {
   .overlay a {
     font-size: 25px;
   }
@@ -1679,10 +1696,38 @@ h1 {
 
   .column10 h2 {
     font-size: 20px;
+    width: 95%;
+    text-align: center;
+    height: 400px;
   }
 
-  .column10 h2 {
+  .column12 {
+    padding: 10px;
+    height: 700px;
+  }
+
+  .column12 h2{
+    padding-top: 5px;
+    padding-left: 15%;
+    height: 575px;
     font-size: 20px;
+    width: 80%;
+  }
+
+  .principle-title {
+    height: 2074px;
+  }
+
+  .about-information-container {
+    height: 2780px;
+  }
+
+  .about-information-item {
+    margin-top: -2975px;
+  }
+
+  .about-center {
+    height: 3221px;
   }
 }
 
@@ -1702,6 +1747,32 @@ h1 {
   .about-landing {
     height: 525px;
   }
+
+  .principle-title {
+    height: 2000px;
+  }
+
+  .about-information-container {
+    height: 2702px;
+  }
+
+  .about-information-item {
+    margin-top: -2937px;
+  }
+
+  .about-center {
+    height: 3153px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .column12{
+    height: 750px;
+  }
+
+  .column12 h2 {
+    height: 631px;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -1710,6 +1781,16 @@ h1 {
     font-size: 19px;
     text-align: center;
   }
+
+  .column12{
+    height: 800px;
+  }
+
+  .column12 h2 {
+    height: 700px;
+  }
+
+
 }
 
 @media screen and (max-width: 300px) {
