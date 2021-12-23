@@ -1078,6 +1078,7 @@ h1 {
   @media screen and (max-width: 1450px) {
     .column12 h2 {
       height: 390px;
+      width: 95%;
     }
 
     .center {
@@ -1283,7 +1284,7 @@ h1 {
   }
 
   .principle-title {
-    height: 2000px;
+    height: 2177px;
   }
 
   .about-information-container {
@@ -1654,6 +1655,14 @@ h1 {
   .center {
     text-align: center;
   }
+
+  #content2 {
+    height: 290px;
+  }
+
+  .principle-title {
+    height: 2259px;
+}
 }
 
 @media screen and (max-width: 465px) {
@@ -1783,11 +1792,11 @@ h1 {
   }
 
   .column12{
-    height: 800px;
+    height: 1000px;
   }
 
   .column12 h2 {
-    height: 700px;
+    height: 800px;
   }
 
 
