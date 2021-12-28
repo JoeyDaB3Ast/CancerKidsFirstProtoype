@@ -910,7 +910,6 @@ h1 {
     border: 5px solid #ff7f7f;
     border-radius: 8px;
     padding: 10px;
-    transition-delay: 0.1s;
   }
 
   .column11 {
@@ -1014,9 +1013,10 @@ h1 {
   }
   
   .volunteer-content {
-    height: 185vh;
+    height: auto;
     overflow-y: hidden;
     padding: 20px;
+    padding-bottom: 66px;
   }
 
   .volunteer-content h1{
@@ -1079,6 +1079,7 @@ h1 {
   .child1 p {
     padding-top: 25px;
     color: #000;
+    line-height: 2;
   }
 
   .child2 {
@@ -1103,7 +1104,7 @@ h1 {
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .blue-btn {
@@ -1117,7 +1118,7 @@ h1 {
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .pink-btn span, .blue-btn span {
@@ -1133,7 +1134,7 @@ h1 {
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.2s;
+    transition: 0.2gs;
   }
   
   .pink-btn:hover span, .blue-btn:hover span {
