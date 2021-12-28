@@ -1014,7 +1014,9 @@ h1 {
   }
   
   .volunteer-content {
-    height: 200vh;
+    height: 185vh;
+    overflow-y: hidden;
+    padding: 20px;
   }
 
   .volunteer-content h1{
@@ -1033,13 +1035,15 @@ h1 {
     padding: 20px;
     border: 2px dashed #d0d6e4;
     padding: 20px 20px 20px 40px;
-    width: 70%;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
-    height: 25vw;
+    height: auto;
     overflow-y: hidden;
     transition: transform .2s;
     cursor: pointer;
+    animation: fadeInUp;
+    animation-duration: 2s;
   }
 
   .volunteer-container:hover {
@@ -1088,6 +1092,58 @@ h1 {
     overflow-y: hidden;
   }
 
+  .pink-btn {
+    border-radius: 10px;
+    background-color: #DF09CA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .blue-btn {
+    border-radius: 10px;
+    background-color: #2C3DD4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .pink-btn span, .blue-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .pink-btn span:after, .blue-btn span:after{
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+  }
+  
+  .pink-btn:hover span, .blue-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .pink-btn:hover span:after,  .blue-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
   @keyframes gradient {
     0% {
@@ -1422,6 +1478,18 @@ h1 {
 
   .about-center {
     height: 3408px;
+  }
+
+  .child1, .child2 {
+    width: 100%;
+  }
+
+  .child2 {
+    padding-top: 10px;
+  }
+
+  .volunteer-content {
+    height: auto;
   }
   
 }
@@ -1827,7 +1895,15 @@ h1 {
 
   .principle-title {
     height: 2259px;
-}
+  }
+
+  .child1 {
+    padding-right: 0px;
+  }
+
+  .child1 p {
+    padding-right: 0px;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -1906,6 +1982,18 @@ h1 {
 
   .about-header h1 {
     font-size: 45px;
+  }
+
+  .child1 h2 {
+    font-size: 5vw;
+  }
+
+  .child1 h3 {
+    font-size: 8vw;
+  }
+
+  .child1 p {
+    font-size: 4vw;
   }
 }
 
