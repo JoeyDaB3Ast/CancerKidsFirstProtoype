@@ -1014,8 +1014,80 @@ h1 {
   }
   
   .volunteer-content {
-    height: 500px;
+    height: 200vh;
   }
+
+  .volunteer-content h1{
+    padding-top: 40px;
+    font-size: 72px;
+    background: rgb(44,61,212);
+    background: linear-gradient(0deg, rgba(44,61,212,1) 0%, rgba(223,98,180,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .volunteer-container {
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px dashed #d0d6e4;
+    padding: 20px 20px 20px 40px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 25vw;
+    overflow-y: hidden;
+    transition: transform .2s;
+    cursor: pointer;
+  }
+
+  .volunteer-container:hover {
+    border: 2px solid #0f3faf;
+    transform: scale(1.05);
+  }
+
+  .child1,.child2 {
+    width: 45%;
+    float: left;
+  }
+
+  .child1 {
+    padding-right: 75px;
+  }
+
+  .child1 h2 {
+    height: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+    border-left: none;
+    color: #96A4C9;
+    font-size: 30px;
+  }
+
+  .child1 h3 {
+    padding-top: 25px;
+    font-size: 45px;
+    border-left: none;
+    color: #000;
+  }
+
+  .child1 p {
+    padding-top: 25px;
+    color: #000;
+  }
+
+  .child2 {
+    width: 55%;
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  .child2 img{
+    width: 100%;
+    overflow-y: hidden;
+  }
+
 
   @keyframes gradient {
     0% {
@@ -1448,10 +1520,8 @@ h1 {
   }
 
   .volunteer-landing {
-    height: 850px
+    height: 850px;
   }
-
-
 }
 
 @media screen and (max-width: 820px) {
