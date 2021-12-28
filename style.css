@@ -783,7 +783,6 @@ h1 {
 
   .about-center {
     height: 1918px;
-    text-align: center;
   }
 
 
@@ -974,6 +973,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
   }
 
@@ -1013,6 +1013,9 @@ h1 {
     clear: both;
   }
   
+  .volunteer-content {
+    height: 500px;
+  }
 
   @keyframes gradient {
     0% {
@@ -1846,6 +1849,22 @@ h1 {
   }
 
   .about-landing {
+    height: 525px;
+  }
+
+  .column14 h1{
+    font-size: 25px;
+  }
+
+  .column14 {
+    height: 150px;
+  }
+
+  .column15 {
+    height: 220px;
+  }
+
+  .volunteer-landing {
     height: 525px;
   }
 
