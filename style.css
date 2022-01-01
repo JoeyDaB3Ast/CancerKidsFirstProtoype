@@ -1043,7 +1043,7 @@ h1 {
     transition: transform .2s;
     cursor: pointer;
     animation: fadeInUp;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
 
   .volunteer-container:hover {
@@ -1145,6 +1145,156 @@ h1 {
     opacity: 1;
     right: 0;
   }
+
+  .warriors-landing {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    background-image:url(warriorHeaderImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    animation: fadeIn;
+    animation-duration: 1s;
+  }
+
+  .warriors-landing header {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+
+  .nav__link {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__link a {
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  .nav__link li {
+    padding: 15px 20px;
+  }
+  
+  .nav__link li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__link li a:hover {
+    color: #DDAE64;
+  }
+
+  .warrior-header {
+    padding-top: 70px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .warrior-header h3 {
+    font-size: 30px;
+    font-weight: bold;
+    height: auto;
+    color: #FFF;
+  }
+
+  .warrior-header h2 {
+    margin-bottom: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    background: rgb(255,179,57);
+    background: linear-gradient(180deg, rgba(255,179,57,1) 0%, rgba(223,9,202,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 0px;
+    border-left: 0px;
+    height: 100%;
+  }
+
+  .warrior-header p {
+    padding-top: 1%;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+  }
+
+  .grid {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 28rem);
+    gap: 8rem;
+    height: auto;
+    padding-bottom: 50px;
+    justify-content: center;
+ }
+  .item {
+    position: relative;
+    height: 38rem;
+    background-color: lightGrey;
+    overflow-y: hidden;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+ }
+  .item h3 {
+    margin: 0;
+    display: block;
+    background-color: rgb(114, 36, 124);
+    color: #FFF;
+    padding: 1rem;
+ }
+
+ .item p {
+   color: #fff;
+   line-height: 1.5;
+ }
+
+  .item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ }
+  .item a:hover ~ .item__overlay, .item a:focus ~ .item__overlay {
+    transform: translate3d(0, 0, 0);
+ }
+  
+ .grid img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+ }
+  .item__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: transform 300ms;
+    background-color: rgb(132, 8, 148);
+    transform: translate3d(0, calc(100% - 3.5rem), 0);
+ }
+  .item__body {
+    flex-grow: 1;
+    padding: 1rem;
+ }
+  .item__body p {
+    margin: 0;
+ }
+  
 
   @keyframes gradient {
     0% {
@@ -1277,6 +1427,10 @@ h1 {
     font-size: 25px;
   }
 
+  .nav__link a {
+    font-size: 25px;
+  }
+
   .triangle-1 {
     width: 1420px;
     height: 740px;
@@ -1325,6 +1479,13 @@ h1 {
     font-weight: 300;
     font-size: 17px;
     color: #edf0f1;
+    text-decoration: none;
+  }
+
+  .nav__link a {
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
     text-decoration: none;
   }
 
@@ -1386,6 +1547,11 @@ h1 {
   .cta {
     display: none;
   }
+
+  .nav__link {
+    display: none;
+  }
+  
   .menu {
     display: initial;
   }
