@@ -1236,13 +1236,17 @@ h1 {
     height: auto;
     padding-bottom: 50px;
     justify-content: center;
+    animation: fadeIn;
+    animation-duration: 5s;
+    overflow: hidden;
  }
   .item {
     position: relative;
-    height: 38rem;
+    height: 39rem;
     background-color: lightGrey;
     overflow-y: hidden;
     box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
  }
   .item h3 {
     margin: 0;
@@ -1283,7 +1287,7 @@ h1 {
     position: absolute;
     width: 100%;
     top: 0;
-    transition: transform 300ms;
+    transition: transform 1000ms;
     background-color: rgb(132, 8, 148);
     transform: translate3d(0, calc(100% - 3.5rem), 0);
  }
@@ -1294,7 +1298,136 @@ h1 {
   .item__body p {
     margin: 0;
  }
+
+  /*Events Section*/
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 5px;
+}
+
+/* Container around content */
+.eventContainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.content img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.content h5 {
+  font-size: 25px;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  height: 60px;
+  overflow-y: hidden;
+  transition: height 2s;
+}
+
+.content:hover {
+  transform: scale(1.01);
+  transition-delay: 1;
+  border: 3px solid rgb(90, 90, 241);
+  height: 600px;
+}
+
+  .events-landing {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .events-landing header {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .timeline-bg h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 50px;
+  }
   
+  .timeline-bg {
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: rgb(25, 90, 143);
+    width: 80%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
 
   @keyframes gradient {
     0% {
@@ -1847,6 +1980,48 @@ h1 {
     height: 300px;
   }
 
+  .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .eventContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .eventContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+
+    .eventContainer::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
 }
 
 @media screen and (max-width: 710px) {
@@ -1901,6 +2076,10 @@ h1 {
   .volunteer-landing {
     height: 700px
   }
+
+  .warrior-header h2 {
+    font-size: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1924,7 +2103,6 @@ h1 {
   .column12 {
     height: 700px;
   }
-
 }
 
 @media screen and (max-width: 574px) {
@@ -2071,6 +2249,15 @@ h1 {
   .child1 p {
     padding-right: 0px;
   }
+
+  .warrior-header h2 {
+    width: 100%;
+    font-size: 60px;
+  }
+
+  .warrior-header h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -2161,6 +2348,10 @@ h1 {
 
   .child1 p {
     font-size: 4vw;
+  }
+
+  .content img {
+    height: 200px;
   }
 }
 
