@@ -1422,7 +1422,7 @@ h1 {
     padding-top: 50px;
     margin-top: 50px;
     background-color: rgb(25, 90, 143);
-    width: 80%;
+    width: 90%;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -1839,6 +1839,20 @@ h1 {
       top: 15px;
       border-radius: 50%;
       z-index: 1;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      height: auto;
+      overflow-y: hidden;
+      transition: height 2s;
+    }
+
+    .content:hover {
+      height: auto;
     }
 
 }
