@@ -1393,7 +1393,7 @@ h1 {
   transition: height 2s;
 }
 
-.content:hover {
+.content:hover, .content.hover_effect {
   transform: scale(1.01);
   transition-delay: 1;
   border: 3px solid rgb(90, 90, 241);
@@ -1798,6 +1798,49 @@ h1 {
   .column12 h2 {
     font-size: 18px;
   }
+
+  .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .eventContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .eventContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+
+    .eventContainer::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
 }
 
 @media screen and (max-width: 950px) {
@@ -1979,49 +2022,6 @@ h1 {
   .column10 {
     height: 300px;
   }
-
-  .timeline::after {
-    left: 31px;
-    }
-    
-    /* Full-width containers */
-    .eventContainer {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .eventContainer::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
-    }
-    
-    /* Make all right containers behave like the left ones */
-    .right {
-    left: 0%;
-    }
-
-    .eventContainer::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
-      background-color: white;
-      border: 4px solid #FF9F55;
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-
 }
 
 @media screen and (max-width: 710px) {
