@@ -156,7 +156,11 @@ h1 {
 
   .macbook img{
     padding-top: 5%;
-    width: 88%;
+    width: 75%;
+  }
+
+  .macbook img:hover {
+    transform: scale(1.01);
   }
 
   .container{
@@ -1146,10 +1150,11 @@ h1 {
     height: auto;
     padding: 10px;
     padding-bottom: 50px;
-    background-image:url(warriorHeaderImg.png);
+    background-image:url(shapeGradient.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
     animation: fadeIn;
     animation-duration: 1s;
@@ -1202,10 +1207,7 @@ h1 {
     margin-bottom: 10px;
     font-size: 100px;
     font-weight: bold;
-    background: rgb(255,179,57);
-    background: linear-gradient(180deg, rgba(255,179,57,1) 0%, rgba(223,9,202,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     padding-left: 0px;
     border-left: 0px;
     height: 100%;
@@ -1246,7 +1248,7 @@ h1 {
   .item h3 {
     margin: 0;
     display: block;
-    background-color: rgb(114, 36, 124);
+    background-color: #8F00FF;
     color: #FFF;
     padding: 1rem;
  }
@@ -1283,7 +1285,7 @@ h1 {
     width: 100%;
     top: 0;
     transition: transform 1000ms;
-    background-color: rgb(132, 8, 148);
+    background-color: #9f3ceb;
     transform: translate3d(0, calc(100% - 3.5rem), 0);
  }
   .item__body {
@@ -1417,6 +1419,63 @@ h1 {
     padding-bottom: 50px;
   }
 
+  .achievements {
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #8F00FF;
+    width: 70%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .achievements h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .achievements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ach-1 ach-2"
+    "ach-3 ach-4";
+    grid-gap: 2rem;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .achievements h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .ach-1, .ach-2, .ach-3, .ach-4 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .ach-1 {
+    grid-area: ach-1;
+  }
+
+  .ach-2 {
+    grid-area: ach-2;
+  }
+
+  .ach-3 {
+    grid-area: ach-3;
+  }
+
+  .ach-4 {
+    grid-area: ach-4;
+  }
+
   .home-landing {
     width: 100%;
     height: auto;
@@ -1429,6 +1488,15 @@ h1 {
 
   .home-landing header {
     background-color: rgba(255, 255, 255, 0);
+  }
+
+  .requestForm {
+    padding: 50px;
+  }
+
+  .achievements img {
+    width: 50%;
+    border-radius: 15px;
   }
 
   @keyframes gradient {
@@ -1851,6 +1919,20 @@ h1 {
 
     .content:hover {
       height: auto;
+    }
+
+    .achievements{
+      width: 90%;
+    }
+
+    .achievements-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "ach-1" 
+      "ach-2" 
+      "ach-3"
+      "ach-4";
     }
 
 }
