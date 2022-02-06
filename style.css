@@ -1374,12 +1374,10 @@ h1 {
   border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
 }
 
-/* The actual content */
 .content {
   padding: 15px 30px;
   background-color: white;
@@ -1491,7 +1489,7 @@ h1 {
   }
 
   .requestForm {
-    padding: 50px;
+    padding: 20px;
   }
 
   .achievements img {
@@ -2254,6 +2252,10 @@ h1 {
   .column12 {
     height: 700px;
   }
+
+  .content img {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 522px) {
@@ -2479,6 +2481,32 @@ h1 {
   .content img {
     height: 200px;
   }
+
+  .grid {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 8rem;
+    height: auto;
+    padding-bottom: 50px;
+    justify-content: center;
+    animation: fadeIn;
+    animation-duration: 5s;
+    overflow: hidden;
+ }
+
+ .item {
+  position: relative;
+  height: 42rem;
+  background-color: lightGrey;
+  overflow-y: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
 }
 
 @media screen and (max-width: 435px) {
@@ -2542,6 +2570,19 @@ h1 {
   .about-center {
     height: 3153px;
   }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, 22rem);
+ }
+
+ .item {
+  position: relative;
+  height: 48rem;
+  background-color: lightGrey;
+  overflow-y: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
 }
 
 @media screen and (max-width: 395px) {
