@@ -1384,7 +1384,7 @@ h1 {
   transition: height 2s;
 }
 
-body.hover .content:hover, .content.hover_effect {
+.content:hover, .content.hover_effect {
   transform: scale(1.01);
   transition-delay: 1;
   border: 3px solid rgb(90, 90, 241);
@@ -1527,7 +1527,7 @@ body.hover .content:hover, .content.hover_effect {
     height: 803px;
   }
 
-  body.hover .home-0:hover {
+  .home-0:hover {
     background-color: rgba(0, 0, 0, 0.418);
     background-blend-mode: multiply;
     transition: all 1s ease;
@@ -1544,7 +1544,7 @@ body.hover .content:hover, .content.hover_effect {
     height: auto;
   }
 
-  body.hover .home-0:hover .hide1{
+  .home-0:hover .hide1{
     transform: translateY(-200px);
   }
 
@@ -1553,7 +1553,7 @@ body.hover .content:hover, .content.hover_effect {
     transition: all 1s ease;
   }
 
-  body.hover .home-0:hover .hide2 {
+  .home-0:hover .hide2 {
     transform: translateY(-110px);
     opacity: 1;
     transition-delay: 1s;
@@ -1586,12 +1586,12 @@ body.hover .content:hover, .content.hover_effect {
     transition: 1s;
   }
 
-  body.hover .home-2:hover {
+  .home-2:hover {
     background-color: #b263e4;
     transition: 0.5s;
   }
 
-  body.hover .home-5:hover {
+  .home-5:hover {
     background-color: #b263e4;
     transition: 0.5s;
   }
@@ -1625,7 +1625,7 @@ body.hover .content:hover, .content.hover_effect {
     font-weight: 300;
   }
 
-  body.hover .home-3:hover {
+  .home-3:hover {
     background-color: rgba(0, 0, 0, 0.513);
     background-blend-mode: multiply;
     transition: all 1s ease;
@@ -1641,12 +1641,12 @@ body.hover .content:hover, .content.hover_effect {
     transition: all 1s ease;
   }
 
-  body.hover .home-3:hover .hide3{
+  .home-3:hover .hide3{
     transform: translateX(200px);
     transition: all 1s ease;
   }
 
-  body.hover .home-3:hover .hide4{
+  .home-3:hover .hide4{
     transform: translateY(-20px);
     opacity: 1;
     transition: all 1s ease;
@@ -1670,7 +1670,7 @@ body.hover .content:hover, .content.hover_effect {
     font-size: 35px;
   }
 
-  body.hover .home-4:hover {
+  .home-4:hover {
     background-color: rgba(0, 0, 0, 0.418);
     background-blend-mode: multiply;
     transition: all 1s ease;
@@ -1692,14 +1692,14 @@ body.hover .content:hover, .content.hover_effect {
     height: auto;
   }
 
-  body.hover .home-4:hover .hide6 {
+  .home-4:hover .hide6 {
     opacity: 1;
     transition: all 1s ease;
     transform: translateY(-70px);
     transition-delay: 0.1s;
   }
 
-  body.hover .home-4:hover .hide5 {
+  .home-4:hover .hide5 {
     opacity: 0;
     transform: translateY(-70px);
     transition: all 1s ease;
@@ -1725,27 +1725,16 @@ body.hover .content:hover, .content.hover_effect {
     transition: 1s;
   }
 
-  body.hover .home-1:hover {
+  .home-1:hover {
     background-color: #e7ab43;
     transition: 0.5s;
   }
 
-  body.hover .home-6:hover {
+  .home-6:hover {
     background-color: #e7ab43;
     transition: 0.5s;
   }
 
-  .on { 
-    display: none; 
-  }
-
-  body.hasHover .on { 
-    display: inline; 
-  }
-  
-  body.hasHover .off { 
-    display: none; 
-  }
 
   @keyframes gradient {
     0% {
@@ -1786,8 +1775,6 @@ body.hover .content:hover, .content.hover_effect {
       transform: translateY(-15px);
     }
   }
-
-  
 
 @media only screen and (min-width: 1930px){
     .about-header2 h2 {
@@ -2163,7 +2150,7 @@ body.hover .content:hover, .content.hover_effect {
       transition: height 2s;
     }
 
-    body.hover .content:hover {
+    .content:hover {
       height: auto;
     }
 
