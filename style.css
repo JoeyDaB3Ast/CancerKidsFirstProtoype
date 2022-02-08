@@ -2190,6 +2190,18 @@ h1 {
       background-image: url(Skyline.jpg);
     }
 
+    .home-0 h2 {
+      opacity: 1;
+    }
+
+    .home-4 h2 {
+      opacity: 1;
+    }
+
+    .home-3 h2 {
+      opacity: 1;
+    }
+
     .home-2 {
       height: 250px;
     }
