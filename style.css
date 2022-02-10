@@ -1828,6 +1828,10 @@ h1 {
   .arrow {
     display: none;
   }
+
+  .about-column img{
+    max-width: 400px;
+  }
 }
 
   @media screen and (max-width: 1450px) {
@@ -1838,6 +1842,10 @@ h1 {
 
     .center {
       margin-top: -25px;
+    }
+
+    .about-column img{
+      max-width: 300px;
     }
   }
 
@@ -2037,6 +2045,10 @@ h1 {
     float: left;
   }
 
+  .about-column img{
+    max-width: none;
+  }
+
   .about-information-container {
     width: 100%;
     height: 3200px;
@@ -2132,7 +2144,7 @@ h1 {
       height: 25px;
       right: -17px;
       background-color: white;
-      border: 4px solid #FF9F55;
+      border: 4px solid #d90de4;
       top: 15px;
       border-radius: 50%;
     }
