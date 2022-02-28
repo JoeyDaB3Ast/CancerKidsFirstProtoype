@@ -91,3 +91,9 @@ const elementInView = (el, dividend = 1) => {
     (window.innerHeight || document.documentElement.clientHeight) / dividend
   );
 };
+
+$(window).on("load", function() {
+  $(".loader-wrapper").fadeOut("slow")
+});
+
+$("document").ready($(".loader-wrapper").fadeOut("slow"));
