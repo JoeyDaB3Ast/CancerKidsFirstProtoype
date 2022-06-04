@@ -1874,6 +1874,31 @@ h1 {
     color: #fff;
   }
 
+  #warriorSection2 {
+    background-color: #DDAE64;
+  }
+
+  #crp {
+    background-color: #fff;
+  }
+  
+  .contact-form {
+    text-align: center;
+  }
+
+  .form-control {
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    width: 600px;
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    background-color: purple;
+    color: #fff;
+    font-size: 20px;
+  }
 
 
   @keyframes gradient {
